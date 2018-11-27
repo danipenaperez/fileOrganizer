@@ -1,0 +1,9 @@
+#startButton {          
+    -fx-background-image: url("../../images/logo.png");
+      
+}
+#spanishLanguageButton {          
+    -fx-background-image: url("../../images/spanish.jpeg");
+	-fx-background-position: center;
+      
+}

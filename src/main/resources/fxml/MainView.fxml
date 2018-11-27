@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="358.0" prefWidth="913.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.dppware.organizefiles.viewControllers.MainViewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="startButton" layoutX="773.0" layoutY="307.0" mnemonicParsing="false" onAction="#start" text="%startButton" />
+    <CheckBox fx:id="includeImagesCheck" layoutX="14.0" layoutY="126.0" mnemonicParsing="false" onAction="#includeFileTypes" selected="true" text="%includeImagesCheckText" />
+    <CheckBox fx:id="includeVideoCheck" layoutX="14.0" layoutY="152.0" mnemonicParsing="false" onAction="#includeFileTypes" selected="true" text="%includeVideoCheckText" />
+    <CheckBox fx:id="includeAudioCheck" layoutX="14.0" layoutY="178.0" mnemonicParsing="false" onAction="#includeFileTypes" selected="true" text="%includeAudioCheckText" />
+    <TextField id="sourceDirTest" fx:id="sourceDirText" layoutX="14.0" layoutY="42.0" onAction="#showFileChooser" prefWidth="599.0" promptText="..." text="" />
+    <Button fx:id="sourceDirFileChooseButton" layoutX="634.0" layoutY="43.0" mnemonicParsing="false" onAction="#sourceDirFileChoose" prefWidth="270.0" text="%sourceDirFileChooseButtonText" textAlignment="CENTER">
+      <tooltip>
+        <Tooltip text="%sourceDirFileChooseButtonToolTipText" />
+      </tooltip>
+    </Button>
+    <TextField fx:id="destDirText" layoutX="14.0" layoutY="73.0" prefWidth="599.0" promptText="..." />
+    <Button fx:id="destinationDirFileChooseButton" layoutX="634.0" layoutY="74.0" mnemonicParsing="false" onAction="#destinationDirFileChoose" text="%destinationDirFileChooseButtonText" textAlignment="CENTER">
+      <tooltip>
+        <Tooltip text="%destinationDirFileChooseButtonToolTipText" />
+      </tooltip>
+    </Button>
+    <Label layoutX="14.0" layoutY="103.0" text="Options" />
+    <TextArea fx:id="eventTextArea" layoutX="14.0" layoutY="221.0" prefHeight="107.0" prefWidth="725.0" wrapText="true" />
+    <Button fx:id="spanishLanguageButton" layoutX="828.0" layoutY="14.0" mnemonicParsing="false" text=""  />
+  </children>
+  <stylesheets>
+    <URL value="@style/styles.css" />
+  </stylesheets>
+</AnchorPane>
